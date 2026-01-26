@@ -233,7 +233,8 @@ function sendDecision(){
     </div>
   `;
 
-  fetch("http://127.0.0.1:8000/simulate",{
+  fetch("https://decision-simulator-backend.up.railway.app", {
+
     method:"POST",
     headers:{ "Content-Type":"application/json" },
     body: JSON.stringify({ decision: decisionText })
@@ -265,4 +266,5 @@ function sendDecision(){
 
 </body>
 </html>
+
 
